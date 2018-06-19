@@ -2,25 +2,45 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    /*
-      Add altering commands here.
-      Return a promise to correctly handle asynchronicity.
-
-      Example:
-      return queryInterface.bulkInsert('Person', [{
-        name: 'John Doe',
-        isBetaMember: false
-      }], {});
-    */
+    return queryInterface.bulkInsert(
+      'products',
+      [
+        {
+          id: 1,
+          decathlonid: 8377732,
+          name: 'VELO ROUTE TRIBAN 100 GRIS BTWIN',
+          url: 'https://www.decathlon.fr/media/837/8377732/big_234ede10-4b00-40de-8431-f1ae71e66aa8.jpg',
+          user_id: 3,
+          expiringdate: 'NOW()',
+          createdAt: 'NOW()',
+          updatedAt: 'NOW()',
+        },
+        {
+          id: 2,
+          decathlonid: 8393116,
+          name: 'VELO ROUTE ULTRA 500 AF GF',
+          url: 'https://www.decathlon.fr/media/839/8393116/big_cc03700a-091d-40b6-916d-0eddf4a90470.jpg',
+          user_id: 3,
+          expiringdate: 'NOW()',
+          createdAt: 'NOW()',
+          updatedAt: 'NOW()',
+        },
+        {
+          id: 3,
+          decathlonid: 8514879,
+          name: 'EASYBREATH',
+          url: 'https://www.decathlon.fr/media/851/8514879/big_eb6f068e-5b08-496e-82be-697b6cd83714.jpg',
+          user_id: 4,
+          expiringdate: 'NOW()',
+          createdAt: 'NOW()',
+          updatedAt: 'NOW()',
+        },
+      ],
+      {},
+    );
   },
 
   down: (queryInterface, Sequelize) => {
-    /*
-      Add reverting commands here.
-      Return a promise to correctly handle asynchronicity.
-
-      Example:
-      return queryInterface.bulkDelete('Person', null, {});
-    */
+    return queryInterface.bulkDelete('products', null, {});
   }
 };

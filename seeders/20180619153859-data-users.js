@@ -2,25 +2,55 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    /*
-      Add altering commands here.
-      Return a promise to correctly handle asynchronicity.
-
-      Example:
-      return queryInterface.bulkInsert('Person', [{
-        name: 'John Doe',
-        isBetaMember: false
-      }], {});
-    */
+    return queryInterface.bulkInsert(
+      'users',
+      [
+        {
+          id: 1,
+          name: 'User Christophe',
+          mail: 'christophe.delattre@decathlon.com',
+          type: 'CUSTOMER',
+          createdAt: 'NOW()',
+          updatedAt: 'NOW()',
+        },
+        {
+          id: 2,
+          name: 'User Julie',
+          mail: 'user.julie@hotmail.fr',
+          type: 'CUSTOMER',
+          createdAt: 'NOW()',
+          updatedAt: 'NOW()',
+        },
+        {
+          id: 3,
+          name: 'IP Martin',
+          mail: 'martin.delorme@decathlon.com',
+          type: 'IP',
+          createdAt: 'NOW()',
+          updatedAt: 'NOW()',
+        },
+        {
+          id: 4,
+          name: 'IP Julian',
+          mail: 'julian.boes@decathlon.com',
+          type: 'IP',
+          createdAt: 'NOW()',
+          updatedAt: 'NOW()',
+        },
+        {
+          id: 5,
+          name: 'Admin Matthieu',
+          mail: 'matthieu.deback@decathlon.com',
+          type: 'ADMIN',
+          createdAt: 'NOW()',
+          updatedAt: 'NOW()',
+        },
+      ],
+      {},
+    );
   },
 
   down: (queryInterface, Sequelize) => {
-    /*
-      Add reverting commands here.
-      Return a promise to correctly handle asynchronicity.
-
-      Example:
-      return queryInterface.bulkDelete('Person', null, {});
-    */
+    return queryInterface.bulkDelete('users', null, {});
   }
 };
