@@ -17,7 +17,7 @@ module.exports = {
           id: 2,
           feedback_id: 2,
           user_id: 3,
-          content: 'Merci pour votre message, pouvez vous précisez ? Merci d\'avance.',
+          content: 'Merci pour votre message, pouvez vous préciser ? Merci d\'avance.',
           createdAt: 'NOW()',
           updatedAt: 'NOW()',
         },
