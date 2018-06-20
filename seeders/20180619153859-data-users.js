@@ -6,7 +6,7 @@ module.exports = {
       'users',
       [
         {
-          id: 1,
+          id: 10001,
           name: 'User Christophe',
           mail: 'christophe.delattre@decathlon.com',
           type: 'CUSTOMER',
@@ -16,7 +16,7 @@ module.exports = {
           updatedAt: 'NOW()',
         },
         {
-          id: 2,
+          id: 10002,
           name: 'User Martin V',
           mail: 'martin.vielvoye@gmail.com',
           type: 'CUSTOMER',
@@ -26,7 +26,7 @@ module.exports = {
           updatedAt: 'NOW()',
         },
         {
-          id: 3,
+          id: 10003,
           name: 'IP Martin',
           mail: 'martin.delorme@decathlon.com',
           type: 'IP',
@@ -36,7 +36,7 @@ module.exports = {
           updatedAt: 'NOW()',
         },
         {
-          id: 4,
+          id: 10004,
           name: 'IP Julian',
           mail: 'julian.boes@decathlon.com',
           type: 'IP',
@@ -46,7 +46,7 @@ module.exports = {
           updatedAt: 'NOW()',
         },
         {
-          id: 5,
+          id: 10005,
           name: 'Admin Matthieu',
           mail: 'matthieu.deback@decathlon.com',
           type: 'ADMIN',
